@@ -1,0 +1,399 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-color: #ffffff;
+}
+
+
+.text-color
+{
+    color: #454545;
+}
+
+.font
+{
+    font-weight:200;
+    font-size:40;
+}
+
+.font-family
+{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+
+/*===================================================== NAV BAR =============================================*/
+
+
+
+/*===================================================== HOME ==============================================*/
+
+#home
+{
+    background-image: url(../imgs/bg.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.overlay
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.overlay h3::after
+{
+    content:" ";
+    animation: typing 7s alternate infinite;
+    font-size: 35;
+    font-weight:300;
+}
+@keyframes typing
+{
+   0%{content: "D";}
+   1%{content: "De";}
+   3%{content: "Des";}
+   5%{content: "Desi";}
+   7%{content: "Desig";}
+   9%{content: "Design";}
+   11%{content: "Designe";}
+   13%{content: "Designer";}
+   15%{content: "Design";}
+   17%{content: "Desig";}
+   19%{content: "Desi";}
+   21%{content: "Des";}
+   23%{content: "De";}
+   25%{content: "Dev";}
+   27%{content: "Deve";}
+   29%{content: "Devel";}
+   31%{content: "Develo";}
+   33%{content: "Develop";}
+   35%{content: "Develope";}
+   37%{content: "Developer";}
+   39%{content: "Develope";}
+   41%{content: "Develope";}
+   43%{content: "Develop";}
+   45%{content: "Develo";}
+   47%{content: "Devel";}
+   49%{content: "Deve";}
+   51%{content: "Dev";}
+   53%{content: "De";}
+   55%{content: "D";}
+   57%{content: "";}
+   59%{content: "l";}
+   61%{content: "la";}
+   63%{content: "lar";}
+   65%{content: "larr";}
+   67%{content: "larry daniels";}
+   69%{content: "larry daniel";}
+   71%{content: "larry danie";}
+   73%{content: "larry dani";}
+   75%{content: "larry dan";}
+   77%{content: "larry da";}
+   79%{content: "larry d";}
+   81%{content: "larry ";}
+   83%{content: "larr";}
+   85%{content: "lar";}
+   87%{content: "la";}
+   93%{content: "l";}
+   99%{content: "";}
+   
+   
+}
+
+.home-icons
+{
+    width: 20px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.padding
+{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.size{
+    font-size: 10px;
+}
+
+/*================================================== ABOUT ==========================================*/
+.progress-style
+{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5) inset !important;
+}
+
+.hover1
+{
+    transition-duration: 1s;
+}
+.hover-to-trans:hover
+{
+    background-color: transparent !important;
+    border: 1px solid black;
+    .hover1
+    {
+        color: black !important;
+    }
+}
+
+.hover2
+{
+    transition-duration: 1s;
+}
+.hover-to-black:hover
+{
+    background-color: black !important;
+    
+    .hover2
+    {
+        color: white !important;
+    }
+}
+
+.dots
+{
+    width: 85%;
+    height: 450px;
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    
+}
+
+.absolute
+{
+    bottom: 25px;
+    left: 25px;
+   height: 470px;
+   
+    
+}
+/*================================================= SERVICES =====================================*/
+.section-bg
+{
+    background-color: #f7f7f7;
+}
+
+.bg-title
+{
+    background-image: url(../imgs/dots.png);
+    background-repeat: repeat;
+    width: 15%;
+    height: 30px;
+}
+.text-title
+{
+    bottom:1px;
+    left: 8px;
+   
+}
+
+.icon-bg
+{
+    width: 70px;
+    height: 70px;
+    transition-duration: 1s;
+}
+
+.card-hover:hover
+{
+    .icon-bg
+    {
+        background-color: rgb(8, 8, 8) !important;
+    }
+
+    .icon-bg a
+    {
+        color: #ffffff !important;
+    }
+    
+}
+
+/*================================================ portfolio ==============================*/
+
+.under-line
+{
+    border-bottom: 1px solid black;
+    
+}
+
+.port-card
+{
+    width: 350px;
+    height: 350px;
+    
+}
+.port-img
+{
+    width: 350px;
+    height: 350px;
+}
+
+.port-overlay
+{
+    width: 340px;
+    height: 340px;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    transition: all 0.5px;
+    transition-duration: 1s;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.port-icon-bg
+{
+    width: 30px;
+    height: 30px;
+    transition-duration: 1s;
+}
+.port-card:hover .port-overlay
+{
+    opacity: 1 !important;
+}
+
+.port-icons:hover
+{
+    background-color: #ffffff !important;
+    border: 1px black solid;
+}
+
+.port-icons:hover a
+{
+    color: black !important;
+}
+/*===============================================================*/
+#Testimonials
+{
+    background-color: #f7f7f7;
+}
+
+.carousel-img
+{
+    width: 7%;
+    padding-top: 30px;
+    margin: auto;
+    padding-top: 50px;
+    margin-top: 50px;
+    
+}
+.carousel-img img
+{
+    width: 100%;
+    border-radius: 50%;
+   
+}
+
+.caption
+{
+    margin: auto;
+    width: 70%;
+    text-align: center;
+    padding-top: 20px;
+    color: #8f8e8e;
+   
+    margin-top: 40px;
+}
+
+.btn-style
+{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color: rgb(48, 47, 47) !important;
+    
+}
+
+/*==================================== OUR TEAM =========================================*/
+
+#ourteam
+{
+    background-color: #f7f7f7;
+}
+.overlay-icon{
+    margin-top: 45%;
+    
+}
+
+.cardOverlay{
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    left: 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+
+.overlay-icon span a{
+    text-decoration: none;
+}
+
+.overlay-icon span a i{
+    color: white;
+    background: #000;
+    width: 50px ;
+    height: 50px;
+    transition: all 0.5s;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding-top: 17px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+}
+.overlay-icon span:hover i{
+    background: white;
+    border: 1ps solid black;
+    color: #000 !important;
+
+
+}
+.innerTeam:hover .cardOverlay{
+    opacity: 1 !important;
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    -o-transform: rotateY(360deg);
+}
+
+.card-body h4{
+font-weight: 800;
+color: aliceblue;
+}
+
+/*======================================CONTACT US====================================*/
+#ContactUs
+{
+    background-color: #ffffff;
+}
