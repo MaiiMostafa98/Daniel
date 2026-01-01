@@ -23,8 +23,8 @@ body
 
 .font
 {
-    font-weight:200;
-    font-size:40;
+    font-size: 40px;
+font-size: 35px;
 }
 
 .font-family
@@ -48,8 +48,15 @@ body
     height: 100vh;
     background-position: center center;
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+}
+
+.nav-background
+{
+    background-color: #454545;
+    z-index: 999;
+    
 }
 
 .overlay
@@ -131,10 +138,14 @@ body
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.padding
-{
-    padding-left: 100px;
-    padding-right: 100px;
+.padding {
+    padding-inline: 100px;
+}
+
+@media (max-width: 768px) {
+    .padding {
+        padding-inline: 15px;
+    }
 }
 .size{
     font-size: 10px;
@@ -199,17 +210,13 @@ body
 
 .bg-title
 {
-    background-image: url(../imgs/dots.png);
+    /* background-image: url(../imgs/dots.png); */
     background-repeat: repeat;
     width: 15%;
     height: 30px;
+
 }
-.text-title
-{
-    bottom:1px;
-    left: 8px;
-   
-}
+
 
 .icon-bg
 {
@@ -240,29 +247,16 @@ body
     
 }
 
-.port-card
-{
-    width: 350px;
-    height: 350px;
-    
-}
-.port-img
-{
-    width: 350px;
-    height: 350px;
+.port-card,.port-img {
+    width: 100%;
+    height: auto;
 }
 
-.port-overlay
-{
-    width: 340px;
-    height: 340px;
-    top: 5px;
-    left: 5px;
-    bottom: 5px;
-    transition: all 0.5px;
-    transition-duration: 1s;
-    background-color: rgba(255, 255, 255, 0.8);
+.port-overlay {
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
 }
+
 
 .port-icon-bg
 {
@@ -396,4 +390,10 @@ color: aliceblue;
 #ContactUs
 {
     background-color: #ffffff;
+}
+
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
 }

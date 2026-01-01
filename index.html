@@ -13,36 +13,89 @@
 
     <body>
         <!-- ======================================== NAVBAR =========================================== -->
-        <nav class="navbar navbar-expand-lg fixed-top  bg-transparent z-3 pb-5">
-            <div class="container padding">
-              <a class="navbar-brand ps-5 pe-5  text-white font-family  "  href="./index.html">DANIELS</a>
-              <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 pe-5 ">
+        <!-- <div class="container">
+          <nav class="navbar navbar-expand-lg fixed-top nav-background  ">
+            <div class="container ">
+              <div class="row ">
+
+              <div class="col-md-3 col-sm-12 bg-warning">
+                <a class="navbar-brand ps-5 pe-5  text-white font-family  "  href="./index.html">DANIELS</a>
+              </div>
+
+              <div class="col-md-9 col-sm-12 bg-success">
+                <div class=" navbar-collapse " id="navbarSupportedContent">
+                <ul class=" list-unstyled d-flex justify-content-end bg-danger gap-3">
                   <li class="nav-item ">
-                    <a class="nav-link text-white font-family pe-4 " aria-current="page" href="#home">Home</a>
+                    <a class="nav-link text-white font-family " aria-current="page" href="#home">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white font-family pe-4" href="#about">About</a>
+                    <a class="nav-link text-white font-family " href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white font-family pe-4" href="#Services">Services</a>
+                    <a class="nav-link text-white font-family " href="#Services">Services</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white font-family pe-4" href="#portfolio">Works</a>
+                    <a class="nav-link text-white font-family " href="#portfolio">Works</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white font-family pe-4" href="#Testimonials">Clients</a>
+                    <a class="nav-link text-white font-family " href="#Testimonials">Clients</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link text-white font-family pe-4" href="#ourteam">Team</a>
+                    <a class="nav-link text-white font-family " href="#ourteam">Team</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link text-white font-family " href="#ContactUs">Contacts</a>
                   </li>
                 </ul>
               </div>
+              </div>
+            </div>
             </div>
           </nav>
+        </div> -->
+
+
+  <nav class="navbar navbar-expand-lg fixed-top nav-background">
+  <div class="container">
+
+    <a class="navbar-brand text-white" href="#home">
+      DANIELS
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto gap-lg-3">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#portfolio">Works</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#clients">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#team">Team</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#contact">Contacts</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
 
           <!-- ============================================ HOME ========================================== -->
           <header id="home">
@@ -111,8 +164,10 @@
         <!-- ======================================= SERVICES======================================== -->
         <section id="Services" class="section-bg pt-5 pb-4">
           <div class="container mb-5 pt-5 pb-5">
-            <div class=" bg-title m-auto  position-relative mb-5 ">
-                <h1 class="text-title fw-bold  text-center position-absolute "> Services. </h1>
+            <div class="w-100 d-flex justify-content-center">
+              <div class="    ">
+                <h1 class=" fw-bold   "> Services. </h1>
+            </div>
             </div>
 
             <div class="row">
@@ -192,8 +247,8 @@
         <!-- ======================================= PORTFOLIO========================================= -->
         <section id="portfolio" class=" pt-5 pb-4">
           <div class="container mb-5 pt-5 pb-5">
-            <div class=" bg-title m-auto  position-relative mb-5 ">
-                <h1 class="text-title fw-bold  text-center position-absolute "> Portfolio.</h1>
+            <div class="  m-auto  mb-5 ">
+                <h1 class=" fw-bold  text-center  "> Portfolio.</h1>
             </div>
 
             <div class="">
@@ -504,8 +559,8 @@
         <!-- =============================================Testimonials.=============== -->
          <section id="Testimonials" class="pt-5 pb-5">
           <div class="container mt-5">
-            <div class=" bg-title m-auto  position-relative  ">
-              <h1 class="text-title fw-bold  text-center position-absolute "> Testimonials. </h1>
+            <div class="    ">
+              <h1 class=" fw-bold  text-center  "> Testimonials. </h1>
           </div>
 
           <div id="carouselExampleCaptions" class="carousel slide">
@@ -606,15 +661,18 @@
          <!-- ============================================= OUR TEAM ==================================== -->
          <section id="ourteam" class=" pt-5 pb-4">
           <div class="container mb-5 pt-5 pb-5">
-            <div class=" bg-title m-auto  position-relative mb-5  w-25 text-center">
-                <h1 class="text-title fw-bold  text-center position-absolute ps-5 "> Our Team. </h1>
+            <div class=" m-auto   text-center">
+                <h1 class=" fw-bold  text-center   "> Our Team. </h1>
             </div>
-            <div class="container">
+            
+            
+              <div class="container">
               <div class="row">
                 
-                  <div class="col-md-4">
-                    <div class="innerTeam">
-                    <div class="card" style="width: 25rem;">
+       
+                   <div class="col-md-4">
+                    <div class="">
+                    <div class="card" >
                       <div class="cardImg position-relative">
                         <img src="./imgs/1.jpg" class="card-img-top" alt="team">
                         <div class="opacity-0 cardOverlay position-absolute  bg-body-secondary ">
@@ -650,8 +708,8 @@
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="innerTeam">
-                <div class="card" style="width: 25rem;">
+                <div class="">
+                <div class="card" >
                   <div class="cardImg position-relative">
                     <img src="./imgs/2.jpg" class="card-img-top" alt="team">
                     <div class="opacity-0 cardOverlay position-absolute  bg-body-secondary ">
@@ -689,8 +747,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <div class="innerTeam">
-            <div class="card" style="width: 25rem;">
+            <div class="">
+            <div class="card" >
               <div class="cardImg position-relative">
                 <img src="./imgs/1.jpg" class="card-img-top" alt="team">
                 <div class="opacity-0 cardOverlay position-absolute  bg-body-secondary ">
@@ -736,8 +794,8 @@
          <!-- =========================================== CONTACT US======================================== -->
          <section id="ContactUs" class=" pt-5 pb-4">
           <div class="container mb-5 pt-5 pb-5">
-            <div class=" bg-title m-auto  position-relative mb-5  w-25 mb-4">
-                <h1 class="text-title fw-bold  text-center position-absolute  ps-5"> Contact Us. </h1>
+            <div class="   mb-5 mb-4">
+                <h1 class=" fw-bold  text-center "> Contact Us. </h1>
             </div>
 
             <div class="row">
@@ -776,20 +834,18 @@
               </div>
               <form>
                 <div class="row">
-                 <div class="col-sm-12 col-md-6 col-lg-6 ps-5 " >
+                 <div class="col-sm-12 col-md-6 col-lg-6 mb-3 " >
                   <input type="text" placeholder="Name" class="ps-2 w-100  rounded-1 border-0 bg-body-secondary pt-2 pb-2">
                  </div>
-                 <div class="col-sm-12 col-md-6 col-lg-6 pe-5" >
+                 <div class="col-sm-12 col-md-6 col-lg-6 " >
                   <input type="email" placeholder="Email" class="ps-2 w-100  rounded-1 border-0 bg-body-secondary pt-2 pb-2">
                  </div>
-                 <div class="row">
-                  <div class="col-12 ps-5 pe-5 mt-4 w-100">
+                  <div class="col-12  mt-4 w-100">
                     <textarea id="w3review" name="w3review" rows="6" cols="60" placeholder="Message" class="ps-2 w-100  rounded-1 border-0 bg-body-secondary pt-2 pb-2 "></textarea>
                   </div>
-                  <div class="ps-5 mt-5">
+                  <div class=" mt-5">
                     <button type="button" class="btn btn-dar bg-black text-white pe-5 ps-5  hover-to-trans"> <span class=" hover1"> Submit </span> </button>
                   </div>
-                 </div>
                 </div>
               </form>
           </div>
